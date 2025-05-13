@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<title>Pencoli Handal - Anak Kecil Ceria</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat:wght@400;700&display=swap');
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    background: linear-gradient(135deg, #8ec5fc, #e0c3fc);
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header {
+    padding: 1rem 2rem;
+    text-align: center;
+    background: rgba(255 255 255 / 0.6);
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  header h1 {
+    font-family: 'Fredoka One', cursive;
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    color: #4b3f72;
+    margin: 0;
+    text-shadow: 2px 2px 6px rgba(75,63,114,0.3);
+  }
+  main {
+    flex: 1;
+    width: 100%;
+    max-width: 480px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .game-container {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(75,63,114,0.3);
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 460px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .description {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: #5a4d96;
+    text-align: center;
+  }
+  .pencoli-svg {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 1rem;
+  }
+  .anak-kecil {
+    width: 170px;
+    height: 220px;
+    margin-bottom: 1rem;
+  }
+  .button-play {
+    background: #6a53d9;
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 14px;
+    padding: 0.75rem 2rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    box-shadow: 0 6px 15px rgba(106,83,217,0.5);
+    user-select: none;
+  }
+  .button-play:hover, .button-play:focus {
+    background: #503faf;
+    outline: none;
+  }
+  footer {
+    font-size: 0.9rem;
+    color: #4b3f72;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    width: 100%;
+    background: rgba(255 255 255 / 0.4);
+    user-select:none;
+  }
+  /* Responsive */
+  @media (max-width: 400px) {
+    .pencoli-svg {
+      width: 180px;
+      height: 180px;
+    }
+    .anak-kecil {
+      width: 130px;
+      height: 170px;
+    }
+    .button-play {
+      font-size: 1rem;
+      padding: 0.6rem 1.5rem;
+    }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Pencoli Handal</h1>
+</header>
+<main>
+  <section class="game-container" role="main" aria-label="Pencoli Handal Game">
+    <p class="description">Selamat datang di Pencoli Handal! Anak kecil siap menantangmu dalam permainan seru ini.</p>
+    <svg class="pencoli-svg" viewBox="0 0 256 256" aria-hidden="true" focusable="false" role="img" >
+      <circle cx="128" cy="128" r="120" fill="#6a53d9" />
+      <circle cx="128" cy="128" r="90" fill="#a193eb" />
+      <circle cx="128" cy="128" r="60" fill="#c3bdf7" />
+      <circle cx="128" cy="128" r="30" fill="#6a53d9" />
+      <circle cx="128" cy="128" r="15" fill="#fff" />
+    </svg>
+    <svg class="anak-kecil" viewBox="0 0 256 320" aria-hidden="true" focusable="false" role="img">
+      <g fill="none" stroke="#4b3f72" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="130" cy="60" r="50" fill="#f1c8a9"/>
+        <path d="M90 110c-10 25 0 45 40 50s50-20 50-50c0-5-5-10-10-15" fill="#f1c8a9" stroke="none"/>
+        <circle cx="110" cy="50" r="7" fill="#4b3f72" stroke="none"/>
+        <circle cx="150" cy="50" r="7" fill="#4b3f72" stroke="none"/>
+        <path d="M105 80c12 15 40 15 45 0" stroke="#4b3f72" stroke-width="4" fill="none" />
+        <path d="M90 160c-5 80-15 130-15 140h90c0-10-10-60-15-140" fill="#a193eb"/>
+        <path d="M75 260h110v20H75z" fill="#6a53d9" />
+      </g>
+    </svg>
+    <button class="button-play" aria-label="Mulai permainan pencoli handal">Mainkan Sekarang</button>
+  </section>
+</main>
+<footer>
+  &copy; 2024 Pencoli Handal - Anak Kecil Ceria
+</footer>
+</body>
+</html>
+
+```
